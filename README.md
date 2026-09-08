@@ -74,7 +74,3 @@ GitHub: [@ayushkumar0808](https://github.com/ayushkumar0808)
 ---
 
 ⭐ If you like this project, consider giving it a star!
-
-```
-
-```
