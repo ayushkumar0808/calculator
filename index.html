@@ -9,176 +9,23 @@
   <body>
     <div id="container">
       <input type="text" id="text_dis" placeholder="0" readonly /><br />
-      <button
-        id="btnC"
-        class="btn"
-        onclick="
-          currentValue = '';
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        C
-      </button>
-      <button
-        id="btn1"
-        class="btn"
-        onclick="
-          currentValue = currentValue + 1;
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        1
-      </button>
-      <button
-        id="btn2"
-        class="btn"
-        onclick="
-          currentValue = currentValue + 2;
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        2
-      </button>
-      <button
-        id="btn+"
-        class="btn"
-        onclick="
-          currentValue = currentValue + '+';
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        +
-      </button>
-      <button
-        id="btn3"
-        class="btn"
-        onclick="
-          currentValue = currentValue + 3;
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        3
-      </button>
-      <button
-        id="btn4"
-        class="btn"
-        onclick="
-          currentValue = currentValue + 4;
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        4
-      </button>
-      <button
-        id="btn-"
-        class="btn"
-        onclick="
-          currentValue = currentValue + '-';
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        -
-      </button>
-      <button
-        id="btn5"
-        class="btn"
-        onclick="
-          currentValue = currentValue + 5;
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        5
-      </button>
-      <button
-        id="btn6"
-        class="btn"
-        onclick="
-          currentValue = currentValue + 6;
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        6
-      </button>
-      <button
-        id="btn*"
-        class="btn"
-        onclick="
-          currentValue = currentValue + '*';
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        *
-      </button>
-      <button
-        id="btn7"
-        class="btn"
-        onclick="
-          currentValue = currentValue + 7;
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        7
-      </button>
-      <button
-        id="btn8"
-        class="btn"
-        onclick="
-          currentValue = currentValue + 8;
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        8
-      </button>
-      <button
-        id="btn/"
-        class="btn"
-        onclick="
-          currentValue = currentValue + '/';
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        /
-      </button>
-      <button
-        id="btn9="
-        class="btn"
-        onclick="
-          currentValue = eval(currentValue);
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        =
-      </button>
-      <button
-        id="btn9"
-        class="btn"
-        onclick="
-          currentValue = currentValue + 9;
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        9
-      </button>
-      <button
-        id="btn0"
-        class="btn"
-        onclick="
-          currentValue = currentValue + 0;
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        0
-      </button>
-      <button
-        id="btn."
-        class="btn"
-        onclick="
-          currentValue = currentValue + '.';
-          document.querySelector('#text_dis').value = currentValue;
-        "
-      >
-        .
-      </button>
+      <button id="btnC" class="btn" onclick="clearDisplay()">C</button>
+      <button id="btn1" class="btn" onclick="appendValue(1)">1</button>
+      <button id="btn2" class="btn" onclick="appendValue(2)">2</button>
+      <button id="btn+" class="btn" onclick="appendValue('+')">+</button>
+      <button id="btn3" class="btn" onclick="appendValue(3)">3</button>
+      <button id="btn4" class="btn" onclick="appendValue(4)">4</button>
+      <button id="btn-" class="btn" onclick="appendValue('-')">-</button>
+      <button id="btn5" class="btn" onclick="appendValue(5)">5</button>
+      <button id="btn6" class="btn" onclick="appendValue(6)">6</button>
+      <button id="btn*" class="btn" onclick="appendValue('*')">*</button>
+      <button id="btn7" class="btn" onclick="appendValue(7)">7</button>
+      <button id="btn8" class="btn" onclick="appendValue(8)">8</button>
+      <button id="btn/" class="btn" onclick="appendValue('/')">/</button>
+      <button id="btn9" class="btn" onclick="appendValue(9)">9</button>
+      <button id="btn0" class="btn" onclick="appendValue(0)">0</button>
+      <button id="btn=" class="btn" onclick="calculator()">=</button>
+      <button id="btn." class="btn" onclick="appendValue('.')">.</button>
     </div>
     <script src="script/script.js"></script>
   </body>
