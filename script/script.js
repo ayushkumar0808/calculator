@@ -1,17 +1,23 @@
 let currentValue = "";
-document.querySelector("#text_dis").value = currentValue;
+let textValue = document.querySelector("#text_dis");
+textValue.value = currentValue;
 
 function appendValue(value) {
   currentValue = currentValue + value;
-  document.querySelector("#text_dis").value = currentValue;
+  textValue.value = currentValue;
 }
 
 function clearDisplay() {
   currentValue = "";
-  document.querySelector("#text_dis").value = currentValue;
+  textValue.value = currentValue;
 }
 
-function calculator() {
+document.querySelector("#btn").addEventListener("click", () => {
   currentValue = eval(currentValue);
-  document.querySelector("#text_dis").value = currentValue;
-}
+  textValue.value = currentValue;
+});
+
+// function calculator() {
+//   currentValue = eval(currentValue);
+//   textValue.value = currentValue;
+// }
