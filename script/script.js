@@ -1,20 +1,24 @@
-let currentValue = "";
 let textValue = document.querySelector("#text_dis");
-textValue.value = currentValue;
+textValue.value = "";
 
 function appendValue(value) {
-  currentValue = currentValue + value;
-  textValue.value = currentValue;
+  if (textValue.value === "Error" || textValue.value === "Infinity") {
+    textValue.value = "";
+  }
+  textValue.value = textValue.value + value;
 }
 
 function clearDisplay() {
-  currentValue = "";
-  textValue.value = currentValue;
+  textValue.value = "";
 }
 
 document.querySelector("#btn").addEventListener("click", () => {
-  currentValue = eval(currentValue);
-  textValue.value = currentValue;
+  try {
+    textValue.value = eval(textValue.value);
+  } catch (error) {
+    console.log(error);
+    textValue.value = "Error";
+  }
 });
 
 // function calculator() {
