@@ -24,6 +24,9 @@
   text-align: end;
   padding-right: 10px;
 }
+#text_dis::placeholder {
+  color: black;
+}
 .btn {
   border-radius: 5px;
   border: 2px solid rgb(139, 131, 131);
