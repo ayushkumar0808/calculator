@@ -16,7 +16,6 @@ document.querySelector("#btn").addEventListener("click", () => {
   try {
     textValue.value = eval(textValue.value);
   } catch (error) {
-    console.log(error);
     textValue.value = "Error";
   }
 });
