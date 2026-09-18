@@ -9,7 +9,7 @@
   align-content: center;
   position: relative;
   left: 70px;
-  top: 20px;
+  top: 40px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
@@ -17,10 +17,12 @@
   border: 2px solid rgb(139, 131, 131);
   border-radius: 5px;
   height: 40px;
-  width: 200px;
+  width: 190px;
   margin: 10px;
   font-weight: 500;
   font-size: x-large;
+  text-align: end;
+  padding-right: 10px;
 }
 .btn {
   border-radius: 5px;
