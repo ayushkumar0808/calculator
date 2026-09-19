@@ -1,4 +1,4 @@
-# 🧮 Calculator
+## 🧮 Calculator
 
 A simple and beginner-friendly **Calculator Mini Project** built using **HTML, CSS, and JavaScript**.
 
